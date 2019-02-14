@@ -1,0 +1,68 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 90% 1fr  ;
+  grid-row-gap: 80px;
+
+  grid-template-areas: 
+        ". titel ."
+        ". info ."
+        ". omgeving ."
+        ". voorraad ."; 
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  align-content: space-between;
+}
+
+header img {
+  align-self: center;
+}
+
+section {
+
+}
+
+.header {
+  grid-area: titel;
+} 
+
+.voertuiginformatie {
+  grid-area: info;
+}
+
+.voertuigomgeving {
+  grid-area: omgeving;
+}
+
+.voorraden {
+  grid-area: voorraad;
+}
+
+/************Mid**************/
+@media only screen and (min-width: 601px){
+
+}
+/**********End Mid************/
+
+/***********Large*************/
+@media only screen and (min-width: 1024px) {
+
+}
+
+/*********End Large***********/
+
+/************XL**************/
+@media only screen and (min-width: 1824px) {
+
+}
+
+/**********End XL************/
+
+
+
+
+
+
+

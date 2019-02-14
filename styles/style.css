@@ -1,0 +1,61 @@
+html{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: avenir next, sans-serif;
+  margin: 0px;
+}
+
+img {
+  margin: 0px 0px 50px 0px;
+}
+
+h1 {
+  color: #175288;
+  font-size: 30px;
+}
+
+h2 {
+  color: #175288;
+  margin: 0px 0px 20px 0px;
+  font-size: 30px;
+}
+
+h3 {
+  font-weight: normal;
+  margin: 0px 0px 10px 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+.content:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.content {
+  padding: 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #D8D8D8;
+}
+
+.chart-container {
+  padding: 10px;
+  position: relative;
+  max-width: 100%;
+  background-color: white;
+  border: 1px solid white;
+  /*border-radius: 15px;*/
+}
+
+header>img {
+  width: 70%;
+}
+
+#myChart {
+/*  width: 200px;
+  height: 200px;*/
+}
