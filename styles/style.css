@@ -19,16 +19,18 @@ h1 {
 h2 {
   color: #175288;
   margin: 0px 0px 20px 0px;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 h3 {
   font-weight: normal;
   margin: 0px 0px 10px 0px;
+  font-size: 24px;
 }
 
 p {
   margin: 0px;
+  font-size: 18px;
 }
 
 .content:nth-child(2) {
