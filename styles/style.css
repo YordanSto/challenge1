@@ -4,7 +4,7 @@ html{
 
 body {
   font-family: avenir next, sans-serif;
-  margin: 0px;
+  margin: 0;
 }
 
 img {
@@ -13,28 +13,28 @@ img {
 
 h1 {
   color: #175288;
-  font-size: 30px;
+  font-size: 2em;
 }
 
 h2 {
   color: #175288;
   margin: 0px 0px 20px 0px;
-  font-size: 26px;
+  font-size: 1.5em;
 }
 
 h3 {
   font-weight: normal;
   margin: 0px 0px 10px 0px;
-  font-size: 24px;
+  font-size: 1.3em;
 }
 
 p {
-  margin: 0px;
-  font-size: 18px;
+  margin: 0;
+  font-size: 1.2em;
 }
 
 .content:nth-child(2) {
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 .content {

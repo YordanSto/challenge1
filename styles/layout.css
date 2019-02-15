@@ -13,7 +13,6 @@ body {
 header {
   display: flex;
   flex-flow: column;
-  align-content: space-between;
 }
 
 header img {
