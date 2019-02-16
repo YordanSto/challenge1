@@ -85,6 +85,33 @@ section {
 /***********Large*************/
 @media only screen and (min-width: 1024px) {
 
+  section:nth-child(4) {
+    display: initial;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1em;
+    grid-row-gap: 5em;  
+
+    grid-template-areas: 
+          "titel titel titel"
+          "info omgeving voorraad"
+          "info omgeving voorraad";
+
+    padding: 2% 7% 5% 5%;
+    margin: 0;
+  }
+
+  #voorraden {
+    margin-bottom: 5%;
+  }
+
+  #foodwater {
+    margin-bottom: 2em;
+  }
+
 }
 
 /*********End Large***********/
