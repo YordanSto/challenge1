@@ -10,7 +10,7 @@ html{
 
 body {
   font-family: avenir next, sans-serif;
-  margin: 0;
+  padding: 0% 0% 5% 0%;
 }
 
 /****** HEADER STYLES ******/
@@ -22,24 +22,24 @@ img {
 
 h1 {
   color: #175288;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 h2 {
   color: #175288;
-  margin: 0% 0% 3.5% 0%;
-  font-size: 1.5em;
+  margin: 0% 0% 5% 0%;
+  font-size: 1.3em;
 }
 
 h3 {
   font-weight: normal;
   margin: 0% 0% 2% 0%;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  text-align: center;
 }
 
 p {
   margin: 0;
-  font-size: 1.2em;
 }
 
 /****** CONTENT STYES ******/
@@ -60,10 +60,20 @@ h2~div {
   position: relative;
   background-color: white;
   border: 1px solid white;
+  border-radius: 20px;
 }
 
 /************Mid**************/
 @media only screen and (min-width: 601px){
+
+  h2~div {
+  padding: 3%;
+
+}
+
+.chart-container {
+  padding: 1.5%;
+}
 
 }
 /**********End Mid************/

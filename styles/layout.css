@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr 90% 1fr  ;
-  grid-row-gap: 80px;
+  grid-row-gap: 70px;
 
   grid-template-areas: 
         ". titel ."
@@ -55,10 +55,30 @@ section {
           ". voorraad voorraad ."; 
   }
   section:nth-child(4) {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 48.7% 48.7%;
+    grid-column-gap: 1em;
+
+    grid-template-areas:
+          "voorraden voorraden"
+          "foodwater nonfood"
+          "foodwater nonfood";
   }
+
+  #voorraden {
+    grid-area: voorraden;
+    margin-bottom: 3%;
+  }
+
+  #foodwater {
+    grid-area: foodwater;
+    margin: 0;
+  }
+
+  #nonfood {
+    grid-area: nonfood;
+  }
+    
 }
 /**********End Mid************/
 
