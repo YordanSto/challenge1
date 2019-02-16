@@ -58,7 +58,6 @@ h2~div {
 .chart-container {
   padding: 10px;
   position: relative;
-  max-width: 100%;
   background-color: white;
   border: 1px solid white;
 }
