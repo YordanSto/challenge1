@@ -33,6 +33,7 @@ h2 {
 
 h3 {
   font-weight: normal;
+  color: white;
   margin: 0% 0% 2% 0%;
   font-size: 1.1em;
   text-align: center;
@@ -52,7 +53,7 @@ h2~div {
   padding: 4%;
   border: 1px solid white;
   border-radius: 20px;
-  background-color: #D8D8D8;
+  background-image: linear-gradient(to bottom right, #175288, #519be1);
 }
 
 .chart-container {
