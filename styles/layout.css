@@ -125,7 +125,7 @@ body {
          grid-template-areas: 
             "omgeving omgeving" 
             "straling afstand" 
-            "straling afstand";
+            "straling .";
     }
      #omgeving {
          grid-area: omgeving;
