@@ -1,130 +1,165 @@
 body {
-  display: grid;
-  grid-template-columns: 1fr 90% 1fr  ;
-  grid-row-gap: 70px;
-
-  grid-template-areas: 
-        ". titel ."
+     display: grid;
+     grid-template-columns: 1fr 90% 1fr ;
+     grid-row-gap: 70px;
+     grid-template-areas: 
+        ". titel ." 
         ". info ."
         ". omgeving ."
-        ". voorraad ."; 
+        ". voorraad .";
 }
-
-.header {
-  grid-area: titel;
-} 
-
-.voertuiginformatie {
-  grid-area: info;
+ .header {
+     grid-area: titel;
 }
-
-.voertuigomgeving {
-  grid-area: omgeving;
+ .voertuiginformatie {
+     grid-area: info;
 }
-
-.voorraden {
-  grid-area: voorraad;
+ .voertuigomgeving {
+     grid-area: omgeving;
 }
-
-header {
-  display: flex;
-  flex-flow: column;
+ .voorraden {
+     grid-area: voorraad;
 }
-
-header img {
-  align-self: center;
+ header {
+     display: flex;
+     flex-flow: column;
 }
-
-section {
-
+ header img {
+     align-self: center;
 }
-
 /************Mid**************/
-@media only screen and (min-width: 601px){
-
-  body {
-    display: grid;
-    grid-template-columns: 1fr 45% 45% 1fr;
-    grid-row-gap: 2em;
-    grid-column-gap: 1em; 
-
-    grid-template-areas: 
-          ". titel titel ."
-          ". info omgeving ."
-          ". info omgeving ."
-          ". voorraad voorraad ."; 
-  }
-  section:nth-child(4) {
-    display: grid;
-    grid-template-columns: 48.7% 48.7%;
-    grid-column-gap: 1em;
-
-    grid-template-areas:
-          "voorraden voorraden"
-          "foodwater nonfood"
-          "foodwater nonfood";
-  }
-
-  #voorraden {
-    grid-area: voorraden;
-    margin-bottom: 3%;
-  }
-
-  #foodwater {
-    grid-area: foodwater;
-    margin: 0;
-  }
-
-  #nonfood {
-    grid-area: nonfood;
-  }
-    
+ @media only screen and (min-width: 601px){
+     body {
+         grid-template-columns: 1fr 45% 45% 1fr;
+         grid-row-gap: 2em;
+         grid-column-gap: 1em;
+         grid-template-areas: 
+             ". titel titel ." 
+             ". info omgeving ." 
+             ". info omgeving ."
+             ". voorraad voorraad .";
+    }
+     section:nth-child(4) {
+         display: grid;
+         grid-template-columns: 48.7% 48.7%;
+         grid-column-gap: 1em;
+         grid-template-areas: 
+            "voorraden voorraden"
+            "foodwater nonfood"
+            "foodwater nonfood";
+    }
+     #voorraden {
+         grid-area: voorraden;
+         margin-bottom: 3%;
+    }
+     #foodwater {
+         grid-area: foodwater;
+         margin: 0;
+    }
+     #nonfood {
+         grid-area: nonfood;
+    }
 }
 /**********End Mid************/
-
 /***********Large*************/
-@media only screen and (min-width: 1024px) {
-
-  section:nth-child(4) {
-    display: initial;
-  }
-
-  body {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-column-gap: 1em;
-    grid-row-gap: 5em;  
-
-    grid-template-areas: 
-          "titel titel titel"
-          "info omgeving voorraad"
-          "info omgeving voorraad";
-
-    padding: 2% 7% 5% 5%;
-    margin: 0;
-  }
-
-  #voorraden {
-    margin-bottom: 5%;
-  }
-
-  #foodwater {
-    margin-bottom: 2em;
-  }
-
+ @media only screen and (min-width: 1024px) {
+     section:nth-child(4) {
+         display: initial;
+    }
+     body {
+         grid-template-columns: 1fr 30% 30% 30% 1fr;
+         grid-column-gap: 1em;
+         grid-row-gap: 5em;
+         grid-template-areas:
+          ". titel titel titel ."
+          ". info omgeving voorraad ."
+          ". info omgeving voorraad .";
+         margin: 0;
+    }
+     #voorraden {
+         margin-bottom: 5%;
+    }
+     #foodwater {
+         margin-bottom: 2em;
+    }
+     header img {
+         align-self: flex-start;
+    }
 }
-
 /*********End Large***********/
-
 /************XL**************/
-@media only screen and (min-width: 1824px) {
-
+ @media only screen and (min-width: 1824px) {
+     body {
+         grid-template-columns: 1fr 20% 20% 20% 20% 1fr;
+         grid-column-gap: 2em;
+         grid-row-gap: 5em;
+         grid-template-areas: 
+            ". titel titel info info ."
+            ". omgeving omgeving voorraad voorraad .";
+         margin: 0;
+    }
+     section:nth-child(2) {
+         display: grid;
+         grid-template-columns: 48.7% 48.7%;
+         grid-column-gap: 1em;
+         grid-template-areas: 
+            "voertuig voertuig"
+            "motor snelheid"
+            "motor snelheid";
+    }
+     #voertuig {
+         grid-area: voertuig;
+         margin-bottom: 3%;
+    }
+     #motor {
+         grid-area: motor;
+         margin: 0;
+    }
+     #snelheid {
+         grid-area: snelheid;
+    }
+     section:nth-child(3) {
+         display: grid;
+         grid-template-columns: 48.7% 48.7%;
+         grid-column-gap: 1em;
+         grid-template-areas: 
+            "omgeving omgeving" 
+            "straling afstand" 
+            "straling afstand";
+    }
+     #omgeving {
+         grid-area: omgeving;
+         margin-bottom: 3%;
+    }
+     #straling {
+         grid-area: straling;
+         margin: 0;
+    }
+     #afstand {
+         grid-area: afstand;
+    }
+     section:nth-child(4) {
+         display: grid;
+         grid-template-columns: 48.7% 48.7%;
+         grid-column-gap: 1em;
+         grid-template-areas: 
+            "voorraden voorraden" 
+            "foodwater nonfood"
+            "foodwater nonfood";
+    }
+     #voorraden {
+         grid-area: voorraden;
+         margin-bottom: 3%;
+    }
+     #foodwater {
+         grid-area: foodwater;
+         margin: 0;
+    }
+     #nonfood {
+         grid-area: nonfood;
+    }
+     header img {
+         align-self: flex-start;
+    }
 }
 /**********End XL************/
-
-
-
-
-
-
-

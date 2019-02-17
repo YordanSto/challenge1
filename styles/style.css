@@ -10,14 +10,14 @@ html{
 
 body {
   font-family: avenir next, sans-serif;
-  padding: 0% 0% 5% 0%;
+  padding: 2% 0% 3% 0%;
 }
 
 /****** HEADER STYLES ******/
 
 img {
-  margin: 2% 0% 10% 0%;
-  width: 60%;
+  margin: 0% 0% 10% 0%;
+  width: 75%;
 }
 
 h1 {
@@ -76,6 +76,9 @@ h2~div {
   padding: 1.5%;
 }
 
+img {
+  margin: 0% 0% 10% 0%;
+  width: 60%;
 }
 /**********End Mid************/
 
@@ -83,12 +86,12 @@ h2~div {
 @media only screen and (min-width: 1024px) {
   img {
     margin: 0% 0% 10% 0%;
-    width: 50%;
+    width: 40%;
 }
 /*********End Large***********/
 
 /************XL**************/
 @media only screen and (min-width: 1824px) {
-
+  
 }
 /**********End XL************/
