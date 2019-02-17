@@ -33,20 +33,23 @@
                     data: {
                         labels: ["Elektrisch", "Diesel", "Nucleair"],
                         datasets: [{
-                            label: "Percentage",
+                            label: "%",
                             backgroundColor: [
-                                'rgb(229, 140, 138)',
-                                'rgb(96, 151, 219)',
-                                'rgb(86, 221, 128)',
-                                'rgb(242, 150, 104)',
+                                'rgb(0, 204, 102)',
+                                'rgb(102, 179, 255)',
+                                'rgb(255, 166, 77)',
                             ],
-                            borderColor: 'rgb(255, 99, 132)',
+                            borderColor: 'rgb(255, 255, 255)',
                             data: [50, 35, 70],
                         }]
                     },
 
                     // Configuration options go here
-                        options: {}
+                            options: {
+						        legend: {
+						            display: false,
+						        }
+						}
                 });
             </script>
         </div>
@@ -67,8 +70,8 @@
                         labels: ["13:00", "14:00", "15:00", "16:00", "17:00"],
                         datasets: [{
                             label: "Kilometer per uur",
-                            backgroundColor: 'rgb(255, 99, 132, 0.2)',
-                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgb(255, 99, 132)',
+                            borderColor: 'rgb(255, 255, 255)',
                             data: [20, 60, 50, 45, 30],
                         }]
                     },
@@ -99,13 +102,13 @@
                         datasets: [{
                             label: "My First dataset",
                             backgroundColor: [
+                                'rgb(255, 184, 77)',
+                                'rgb(255, 133, 51)',
+                                'rgb(230, 92, 0)',
+                                'rgb(204, 0, 0)',
                                 'rgb(153, 0, 0)',
-                                'rgb(96, 151, 219)',
-                                'rgb(86, 221, 128)',
-                                'rgb(242, 150, 104)',
-                                'rgb(150, 205, 255)',
                             ],
-                            borderColor: 'rgb(255, 99, 132)',
+                            borderColor: 'rgb(255, 255, 255)',
                             data: [10, 25, 18, 30, 45],
                         }]
                     },
@@ -162,7 +165,7 @@
                     data: {
                         labels: ["Vlees", "Vis", "Groente", "Fruit", "Zuivel", "Brood"],
                         datasets: [{
-                            label: "My First dataset",
+                            label: "Aantal stuks",
                             backgroundColor: [
                                 'rgb(229, 140, 138)',
                                 'rgb(96, 151, 219)',
@@ -171,15 +174,8 @@
                                 'rgb(150, 205, 255)',
                                 'rgb(214, 175, 124)',
                             ],
-                            borderColor: [
-                                'rgb(229, 140, 138)',
-                                'rgb(96, 151, 219)',
-                                'rgb(86, 221, 128)',
-                                'rgb(242, 150, 104)',
-                                'rgb(150, 205, 255)',
-                                'rgb(214, 175, 124)',
-                            ],
-                            data: [5, 10, 5, 2, 20, 30],
+                            borderColor: 'rgb(255, 255, 255)',
+                            data: [50, 30, 50, 25, 45, 65],
                         }]
                     },
                     // Configuration options go here
@@ -205,18 +201,13 @@
                         datasets: [{
                             label: "My First dataset",
                             backgroundColor: [
-                                'rgb(229, 140, 138)',
-                                'rgb(96, 151, 219)',
-                                'rgb(86, 221, 128)',
-                                'rgb(242, 150, 104)',
+                                'rgb(204, 204, 204)',
+                                'rgb(153, 204, 255)',
+                                'rgb(0, 204, 153)',
+                                'rgb(204, 102, 153)',
                             ],
-                            borderColor: [
-                                'rgb(229, 140, 138)',
-                                'rgb(96, 151, 219)',
-                                'rgb(86, 221, 128)',
-                                'rgb(242, 150, 104)',
-                            ],
-                            data: [10, 5, 2, 20],
+                            borderColor: 'rgb(255, 255, 255)',
+                            data: [100, 50, 35, 60],
                         }]
                     },
 

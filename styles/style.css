@@ -53,7 +53,7 @@ h2~div {
   padding: 4%;
   border: 1px solid white;
   border-radius: 20px;
-  background-image: linear-gradient(to bottom right, #175288, #519be1);
+  background-image: linear-gradient(to bottom right, #175288, #92c1ed);
 }
 
 .chart-container {
@@ -62,6 +62,10 @@ h2~div {
   background-color: white;
   border: 1px solid white;
   border-radius: 20px;
+}
+
+#firstChart {
+  padding-top: 3%;
 }
 
 /************Mid**************/
