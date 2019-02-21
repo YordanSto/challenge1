@@ -20,204 +20,42 @@
         <h2 id="voertuig">Voertuiginformatie</h2>
         <div id="motor">
             <h3>Verbruik per andrijving</h3>
-            <div class="chart-container">
-                <canvas id="firstChart"></canvas>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-            <script type="text/javascript">
-                var ctx = document.getElementById('firstChart').getContext('2d');
-                var chart = new Chart(ctx, {
-                    // The type of chart we want to create
-                    type: 'bar',
-
-                    // The data for our dataset
-                    data: {
-                        labels: ["Elektrisch", "Diesel", "Nucleair"],
-                        datasets: [{
-                            label: "%",
-                            backgroundColor: [
-                                'rgb(0, 204, 102)',
-                                'rgb(102, 179, 255)',
-                                'rgb(255, 166, 77)',
-                            ],
-                            borderColor: 'rgb(255, 255, 255)',
-                            data: [50, 35, 70],
-                        }]
-                    },
-
-                    // Configuration options go here
-                            options: {
-						        legend: {
-						            display: false,
-						        }
-						}
-                });
-            </script>
+            <div class="chart-container"><canvas id="motorChart"></canvas></div>
         </div>
         <div id="snelheid">
             <h3>Snelheid</h3>
-            <div class="chart-container">
-                <canvas id="secondChart"></canvas>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-            <script type="text/javascript">
-                var ctx = document.getElementById('secondChart').getContext('2d');
-                var chart = new Chart(ctx, {
-                    // The type of chart we want to create
-                    type: 'line',
-
-                    // The data for our dataset
-                    data: {
-                        labels: ["13:00", "14:00", "15:00", "16:00", "17:00"],
-                        datasets: [{
-                            label: "Kilometer per uur",
-                            backgroundColor: 'rgb(255, 99, 132)',
-                            borderColor: 'rgb(255, 255, 255)',
-                            data: [20, 60, 50, 45, 30],
-                        }]
-                    },
-
-                    // Configuration options go here
-                    options: {}
-                });
-            </script>
+            <div class="chart-container"><canvas id="snelheidChart"></canvas></div>
         </div>
     </section>
     <section class="grid-item voertuigomgeving">
         <h2 id="omgeving">Voertuig omgeving</h2>
         <div id="straling">
             <h3>Straling</h3>
-            <div class="chart-container">
-                <canvas id="thirdChart"></canvas>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-            <script type="text/javascript">
-                var ctx = document.getElementById('thirdChart').getContext('2d');
-                var chart = new Chart(ctx, {
-                    // The type of chart we want to create
-                    type: 'polarArea',
-
-                    // The data for our dataset
-                    data: {
-                        labels: ["Infrarood", "Radio", "UV", "Röntgen", "Gamma"],
-                        datasets: [{
-                            label: "My First dataset",
-                            backgroundColor: [
-                                'rgb(255, 184, 77)',
-                                'rgb(255, 133, 51)',
-                                'rgb(230, 92, 0)',
-                                'rgb(204, 0, 0)',
-                                'rgb(153, 0, 0)',
-                            ],
-                            borderColor: 'rgb(255, 255, 255)',
-                            data: [10, 25, 18, 30, 45],
-                        }]
-                    },
-
-                    // Configuration options go here
-                    options: {}
-                });
-            </script>
+            <div class="chart-container"><canvas id="stralingChart"></canvas></div>
         </div>
         <div id="afstand">
             <h3>Afstand afgelegd over tijd</h3>
-            <div class="chart-container">
-                <canvas id="fourthChart"></canvas>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-            <script type="text/javascript">
-                var ctx = document.getElementById('fourthChart').getContext('2d');
-                var chart = new Chart(ctx, {
-                    // The type of chart we want to create
-                    type: 'bar',
-
-                    // The data for our dataset
-                    data: {
-                        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-                        datasets: [{
-                            label: "Afgelegde kilometers x1000",
-                            backgroundColor: 'rgb(255, 99, 132)',
-                            borderColor: 'rgb(255, 99, 132)',
-                            data: [30, 45, 75, 55, 15, 22],
-                        }]
-                    },
-
-                    // Configuration options go here
-                    options: {}
-                });
-            </script>
+            <div class="chart-container"><canvas id="afstandChart"></canvas></div>
         </div>
     </section>
     <section class="grid-item voorraden">
         <h2 id="voorraden">Voorraden</h2>
         <div id="foodwater">
             <h3>Voedsel en water</h3>
-            <div class="chart-container">
-                <canvas id="fifthChart"></canvas>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-            <script type="text/javascript">
-                var ctx = document.getElementById('fifthChart').getContext('2d');
-                var chart = new Chart(ctx, {
-                    // The type of chart we want to create
-                    type: 'doughnut',
-
-                    // The data for our dataset
-                    data: {
-                        labels: ["Vlees", "Vis", "Groente", "Fruit", "Zuivel", "Brood"],
-                        datasets: [{
-                            label: "Aantal stuks",
-                            backgroundColor: [
-                                'rgb(229, 140, 138)',
-                                'rgb(96, 151, 219)',
-                                'rgb(86, 221, 128)',
-                                'rgb(242, 150, 104)',
-                                'rgb(150, 205, 255)',
-                                'rgb(214, 175, 124)',
-                            ],
-                            borderColor: 'rgb(255, 255, 255)',
-                            data: [50, 30, 50, 25, 45, 65],
-                        }]
-                    },
-                    // Configuration options go here
-                    options: {}
-                });
-            </script>
+            <div class="chart-container"><canvas id="foodChart"></canvas></div>
         </div>
         <div id="nonfood">
             <h3>Non-food</h3>
-            <div class="chart-container">
-                <canvas id="myChart"></canvas>
-            </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-            <script type="text/javascript">
-                var ctx = document.getElementById('myChart').getContext('2d');
-                var chart = new Chart(ctx, {
-                    // The type of chart we want to create
-                    type: 'doughnut',
-
-                    // The data for our dataset
-                    data: {
-                        labels: ["WC papier", "Shampoo", "Tandpasta", "Wasmiddel"],
-                        datasets: [{
-                            label: "My First dataset",
-                            backgroundColor: [
-                                'rgb(204, 204, 204)',
-                                'rgb(153, 204, 255)',
-                                'rgb(0, 204, 153)',
-                                'rgb(204, 102, 153)',
-                            ],
-                            borderColor: 'rgb(255, 255, 255)',
-                            data: [100, 50, 35, 60],
-                        }]
-                    },
-
-                    // Configuration options go here
-                    options: {}
-                });
-            </script>
+            <div class="chart-container"><canvas id="nonfoodChart"></canvas></div>
         </div>
     </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="scripts/motor.js"></script>
+<script type="text/javascript" src="scripts/snelheid.js"></script>
+<script type="text/javascript" src="scripts/straling.js"></script>
+<script type="text/javascript" src="scripts/afstand.js"></script>
+<script type="text/javascript" src="scripts/food-water.js"></script>
+<script type="text/javascript" src="scripts/non-food.js"></script>
 </body>
 
 </html>
