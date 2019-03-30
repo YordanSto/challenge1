@@ -1,7 +1,7 @@
 body {
      display: grid;
      grid-template-columns: 1fr 90% 1fr ;
-     grid-row-gap: 70px;
+     grid-row-gap: 35px;
      grid-template-areas: 
         ". titel ." 
         ". info ."
@@ -69,9 +69,9 @@ body {
      body {
          grid-template-columns: 1fr 30% 30% 30% 1fr;
          grid-column-gap: 1em;
-         grid-row-gap: 5em;
+         grid-row-gap: 9em;
          grid-template-areas:
-          ". titel titel titel ."
+          ". titel titel . ."
           ". info omgeving voorraad ."
           ". info omgeving voorraad .";
          margin: 0;
